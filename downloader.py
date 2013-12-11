@@ -29,6 +29,7 @@ def grab_image():
     title_clean = ''.join(e for e in title if e.isalnum())
     image = urllib2.urlopen(link)
     name = title_clean + '.' + link.split('.')[-1]
+    # old way of doing it:
     #name = "National_Geographic_Picture_Of_The_Day" + '.' + link.split('.')[-1]
     #check against current image. if same, return. else, delete old image and continue
     if name != current_image:
