@@ -1,61 +1,79 @@
 #!/usr/bin/python
 
-import urllib2, sys, os, getpass, time
+import urllib2
+import sys
+import os
+import getpass
+import time
+import subprocess
+import sqlite3
+import datetime
 from bs4 import BeautifulSoup as bs4
-from datetime import datetime
+from AppKit import NSWorkspace, NSScreen
+from Foundation import NSURL
 
-''' 
-This simple script grabs the daily National Geographic 
+
+'''
+This simple script grabs the daily National Geographic
 image of the day, and sets it as your desktop background
 '''
-current_image = ''
-new_image_time = None
 
-def grab_image():
-    global current_image
+def get_image_link_and_title():
     try:
         page = urllib2.urlopen("http://photography.nationalgeographic.com/photography/photo-of-the-day/")
     except urllib2.URLError:
         #Looks like it didn't work, just return from the function and try again at the next interval
         print "there was an error opening the url"
-        return
+        return None, None
     soup = bs4(page)
     try:
         link = soup.find('div', class_='download_link').find('a').attrs['href']
     except AttributeError:
         #looks like there wasn't a download link. just grab the low-res image instead
         link = soup.find('div', class_='primary_photo').find('img').attrs['src']
-    title = soup.title.contents[0]
-    title_clean = ''.join(e for e in title if e.isalnum())
-    image = urllib2.urlopen(link)
-    name = title_clean + '.' + link.split('.')[-1]
-    # old way of doing it:
-    #name = "National_Geographic_Picture_Of_The_Day" + '.' + link.split('.')[-1]
-    #check against current image. if same, return. else, delete old image and continue
-    if name != current_image:
-        path_to_pictures = '/Users/' + getpass.getuser() + '/Pictures/'
-        old_image_path = path_to_pictures + current_image
-        image_path =  path_to_pictures + name
-        if current_image != '':
-            os.remove(old_image_path)
-        current_image = name
-        output = open(image_path, 'w')
-        output.write(image.read())
-        output.close()
-        os.system('defaults write com.apple.desktop Background \'{default = {ImageFilePath = "' + image_path + '"; };}\'')
-        os.system('killall Dock')
 
-def check_time():
-    global new_image_time
-    now = datetime.now()
-    if new_image_time == None or now >= new_image_time:
-        grab_image()
-        new_image_time = now.replace(hour=8, minute=0, second=0, microsecond=0)
+    # now, prepend http onto the url
+    link = 'http:{0}'.format(link)
+    title = soup.find('div', id='page_head').find('h1').contents[0]
+    return link, title
+
+def download_and_name_image(link, title):
+    image = urllib2.urlopen(link)
+    path_to_pictures = '/Users/' + getpass.getuser() + '/Pictures/'
+
+    # sets the image name and file extension
+    desktop_picture_path = '{0}NatGeo - {1}.{2}'.format(path_to_pictures, title, link.split('.')[-1])
+
+    # writes the file and returns the path
+    output = open(desktop_picture_path, 'w')
+    output.write(image.read())
+    output.close()
+
+    return desktop_picture_path
+
+def set_desktop_background(desktop_picture_path):
+    file_url = NSURL.fileURLWithPath_(desktop_picture_path)
+    ws = NSWorkspace.sharedWorkspace()
+
+    screens = NSScreen.screens()
+    for screen in screens:
+        ws.setDesktopImageURL_forScreen_options_error_(file_url, screen, {}, None)
+
+def should_download_new_image(next_image_time):
+    return datetime.datetime.now() >= next_image_time
 
 def main():
+    old_image = ''
+    next_image_time = datetime.datetime.now()
     while True:
-        check_time()
+        if should_download_new_image(next_image_time):
+            link, title = get_image_link_and_title()
+            if link != None and title != None:
+                desktop_picture_path = download_and_name_image(link, title)
+                set_desktop_background(desktop_picture_path)
+                next_image_time = next_image_time + datetime.timedelta(1)
         time.sleep(30)
-   
+
+
 if __name__ == "__main__":
     main()
