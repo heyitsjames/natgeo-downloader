@@ -41,7 +41,11 @@ def get_image_link_and_title():
     return link, title
 
 def download_and_name_image(link, title):
-    image = urllib2.urlopen(link)
+    try: 
+        image = urllib2.urlopen(link)
+    except Exception as e:
+        # network error. Return None
+        return None
     path_to_pictures = '/Users/' + getpass.getuser() + '/Pictures/'
 
     # sets the image name and file extension
@@ -77,11 +81,12 @@ def main():
     while True:
         if should_download_new_image(next_check_time):
             link, title = get_image_link_and_title()
-            if link != None and title != None:
+            if link and title:
                 desktop_picture_path = download_and_name_image(link, title)
-                set_desktop_background(desktop_picture_path)
-                # set the next check time to 2am the next day.
-                next_check_time = two_am_tomorrow() 
+                if desktop_picture_path:
+                    set_desktop_background(desktop_picture_path)
+                    # set the next check time to 2am the next day.
+                    next_check_time = two_am_tomorrow() 
         time.sleep(30)
 
 
