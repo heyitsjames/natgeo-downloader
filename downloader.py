@@ -15,8 +15,8 @@ from Foundation import NSURL
 
 
 '''
-This simple script grabs the daily National Geographic
-image of the day, and sets it as your desktop background
+This script grabs the daily National Geographic image of the day, 
+and sets it as your desktop background every day. Check time is set to 2am
 '''
 def get_image_link_and_title():
     try:
