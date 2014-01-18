@@ -2,7 +2,7 @@
 
 * Downloads the National Geographic Picture of the Day and sets it to your Desktop  
 
-#### To use the Python script (downloader.py), run this command: ####
+#### Dependencies ####
 * `pip install beautifulsoup4`
 * If you'd like to package this into a Mac App, you'll need py2app:
 * `pip install py2app`
