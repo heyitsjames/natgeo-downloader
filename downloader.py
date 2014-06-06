@@ -37,7 +37,7 @@ def get_image_link_and_title():
 
     # now, prepend http onto the url
     link = 'http:{0}'.format(link)
-    title = soup.find('div', id='page_head').find('h1').contents[0]
+    title = soup.find('div', id='page_head').find('h1').contents[0].encode('ascii', 'ignore')
     return link, title
 
 def download_and_name_image(link, title):
@@ -49,7 +49,7 @@ def download_and_name_image(link, title):
     path_to_pictures = '/Users/' + getpass.getuser() + '/Pictures/'
 
     # sets the image name and file extension
-    desktop_picture_path = '{0}NatGeo - {1}.{2}'.format(
+    desktop_picture_path = '{0}NatGeo-{1}.{2}'.format(
                             path_to_pictures, title, link.split('.')[-1])
 
     # writes the file and returns the path
@@ -84,6 +84,7 @@ def main():
             if link and title:
                 desktop_picture_path = download_and_name_image(link, title)
                 if desktop_picture_path:
+                    print(desktop_picture_path)
                     set_desktop_background(desktop_picture_path)
                     # set the next check time to 2am the next day.
                     next_check_time = two_am_tomorrow() 
