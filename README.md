@@ -10,11 +10,11 @@
 `pip install pyobjc`  
 Or just by itself:  
 `pip install AppKit`  
-
-As a note, AppKit has `PyGObject` as a dependency, and often fails on a pip install. I know of no workaround for this other than to install from source as of right now. If this strikes you as irritating, bug the PyGObject guys to fix their build for pip.
-
 * If you'd like to package this into a Mac App, you'll need py2app:  
 `pip install py2app`
+
+
+As a note, AppKit has `PyGObject` as a dependency, and often fails on a pip install. I know of no workaround for this other than to install from source as of right now. If this strikes you as irritating, bug the PyGObject guys to fix their build for pip.
 
 
 #Usage#
