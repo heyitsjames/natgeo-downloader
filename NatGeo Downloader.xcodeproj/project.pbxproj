@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A820E6819F09C1E006B82BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A820E6719F09C1E006B82BA /* main.m */; };
+		1A820E6B19F09C1E006B82BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A820E6A19F09C1E006B82BA /* AppDelegate.m */; };
+		1A820E6D19F09C1E006B82BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A820E6C19F09C1E006B82BA /* Images.xcassets */; };
+		1A820E7C19F09C1E006B82BA /* NatGeo_DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A820E7B19F09C1E006B82BA /* NatGeo_DownloaderTests.m */; };
+		1AC0BEF819F0CBCD0067CEBB /* bs4 in Resources */ = {isa = PBXBuildFile; fileRef = 1AC0BEF719F0CBCD0067CEBB /* bs4 */; };
+		1AC0BEF919F0CBEB0067CEBB /* downloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 1AC0BEE419F0C3C10067CEBB /* downloader.py */; };
+		1AC0BEFA19F0DB7F0067CEBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A820E6E19F09C1E006B82BA /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A820E7619F09C1E006B82BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A820E5A19F09C1E006B82BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A820E6119F09C1E006B82BA;
+			remoteInfo = "NatGeo Downloader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A820E6219F09C1E006B82BA /* NatGeo Downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NatGeo Downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A820E6619F09C1E006B82BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A820E6719F09C1E006B82BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A820E6919F09C1E006B82BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A820E6A19F09C1E006B82BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A820E6C19F09C1E006B82BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A820E6F19F09C1E006B82BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1A820E7519F09C1E006B82BA /* NatGeo DownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NatGeo DownloaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A820E7A19F09C1E006B82BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A820E7B19F09C1E006B82BA /* NatGeo_DownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatGeo_DownloaderTests.m; sourceTree = "<group>"; };
+		1AC0BEE419F0C3C10067CEBB /* downloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = downloader.py; sourceTree = "<group>"; };
+		1AC0BEF719F0CBCD0067CEBB /* bs4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bs4; path = "../OSX/NatGeo Downloader/bs4"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A820E5F19F09C1E006B82BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A820E7219F09C1E006B82BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A820E5919F09C1D006B82BA = {
+			isa = PBXGroup;
+			children = (
+				1A820E6419F09C1E006B82BA /* NatGeo Downloader */,
+				1A820E7819F09C1E006B82BA /* NatGeo DownloaderTests */,
+				1A820E6319F09C1E006B82BA /* Products */,
+				1AC0BECF19F0C3C10067CEBB /* vendor */,
+			);
+			sourceTree = "<group>";
+		};
+		1A820E6319F09C1E006B82BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A820E6219F09C1E006B82BA /* NatGeo Downloader.app */,
+				1A820E7519F09C1E006B82BA /* NatGeo DownloaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A820E6419F09C1E006B82BA /* NatGeo Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				1A820E6919F09C1E006B82BA /* AppDelegate.h */,
+				1A820E6A19F09C1E006B82BA /* AppDelegate.m */,
+				1A820E6C19F09C1E006B82BA /* Images.xcassets */,
+				1A820E6E19F09C1E006B82BA /* MainMenu.xib */,
+				1A820E6519F09C1E006B82BA /* Supporting Files */,
+			);
+			path = "NatGeo Downloader";
+			sourceTree = "<group>";
+		};
+		1A820E6519F09C1E006B82BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A820E6619F09C1E006B82BA /* Info.plist */,
+				1A820E6719F09C1E006B82BA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A820E7819F09C1E006B82BA /* NatGeo DownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A820E7B19F09C1E006B82BA /* NatGeo_DownloaderTests.m */,
+				1A820E7919F09C1E006B82BA /* Supporting Files */,
+			);
+			path = "NatGeo DownloaderTests";
+			sourceTree = "<group>";
+		};
+		1A820E7919F09C1E006B82BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A820E7A19F09C1E006B82BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AC0BECF19F0C3C10067CEBB /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				1AC0BEF719F0CBCD0067CEBB /* bs4 */,
+				1AC0BEE419F0C3C10067CEBB /* downloader.py */,
+			);
+			name = vendor;
+			path = ../../vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A820E6119F09C1E006B82BA /* NatGeo Downloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A820E7F19F09C1E006B82BA /* Build configuration list for PBXNativeTarget "NatGeo Downloader" */;
+			buildPhases = (
+				1A820E5E19F09C1E006B82BA /* Sources */,
+				1A820E5F19F09C1E006B82BA /* Frameworks */,
+				1A820E6019F09C1E006B82BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NatGeo Downloader";
+			productName = "NatGeo Downloader";
+			productReference = 1A820E6219F09C1E006B82BA /* NatGeo Downloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A820E7419F09C1E006B82BA /* NatGeo DownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A820E8219F09C1E006B82BA /* Build configuration list for PBXNativeTarget "NatGeo DownloaderTests" */;
+			buildPhases = (
+				1A820E7119F09C1E006B82BA /* Sources */,
+				1A820E7219F09C1E006B82BA /* Frameworks */,
+				1A820E7319F09C1E006B82BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A820E7719F09C1E006B82BA /* PBXTargetDependency */,
+			);
+			name = "NatGeo DownloaderTests";
+			productName = "NatGeo DownloaderTests";
+			productReference = 1A820E7519F09C1E006B82BA /* NatGeo DownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A820E5A19F09C1E006B82BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "James Rasmussen";
+				TargetAttributes = {
+					1A820E6119F09C1E006B82BA = {
+						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					1A820E7419F09C1E006B82BA = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 1A820E6119F09C1E006B82BA;
+					};
+				};
+			};
+			buildConfigurationList = 1A820E5D19F09C1E006B82BA /* Build configuration list for PBXProject "NatGeo Downloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A820E5919F09C1D006B82BA;
+			productRefGroup = 1A820E6319F09C1E006B82BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A820E6119F09C1E006B82BA /* NatGeo Downloader */,
+				1A820E7419F09C1E006B82BA /* NatGeo DownloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A820E6019F09C1E006B82BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC0BEFA19F0DB7F0067CEBB /* MainMenu.xib in Resources */,
+				1AC0BEF919F0CBEB0067CEBB /* downloader.py in Resources */,
+				1AC0BEF819F0CBCD0067CEBB /* bs4 in Resources */,
+				1A820E6D19F09C1E006B82BA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A820E7319F09C1E006B82BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A820E5E19F09C1E006B82BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A820E6B19F09C1E006B82BA /* AppDelegate.m in Sources */,
+				1A820E6819F09C1E006B82BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A820E7119F09C1E006B82BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A820E7C19F09C1E006B82BA /* NatGeo_DownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A820E7719F09C1E006B82BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A820E6119F09C1E006B82BA /* NatGeo Downloader */;
+			targetProxy = 1A820E7619F09C1E006B82BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A820E6E19F09C1E006B82BA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A820E6F19F09C1E006B82BA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A820E7D19F09C1E006B82BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A820E7E19F09C1E006B82BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A820E8019F09C1E006B82BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "NatGeo Downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A820E8119F09C1E006B82BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "NatGeo Downloader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1A820E8319F09C1E006B82BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NatGeo DownloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatGeo Downloader.app/Contents/MacOS/NatGeo Downloader";
+			};
+			name = Debug;
+		};
+		1A820E8419F09C1E006B82BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NatGeo DownloaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatGeo Downloader.app/Contents/MacOS/NatGeo Downloader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A820E5D19F09C1E006B82BA /* Build configuration list for PBXProject "NatGeo Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A820E7D19F09C1E006B82BA /* Debug */,
+				1A820E7E19F09C1E006B82BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A820E7F19F09C1E006B82BA /* Build configuration list for PBXNativeTarget "NatGeo Downloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A820E8019F09C1E006B82BA /* Debug */,
+				1A820E8119F09C1E006B82BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A820E8219F09C1E006B82BA /* Build configuration list for PBXNativeTarget "NatGeo DownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A820E8319F09C1E006B82BA /* Debug */,
+				1A820E8419F09C1E006B82BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A820E5A19F09C1E006B82BA /* Project object */;
+}
