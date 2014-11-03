@@ -11,9 +11,25 @@
 		1A820E6B19F09C1E006B82BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A820E6A19F09C1E006B82BA /* AppDelegate.m */; };
 		1A820E6D19F09C1E006B82BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A820E6C19F09C1E006B82BA /* Images.xcassets */; };
 		1A820E7C19F09C1E006B82BA /* NatGeo_DownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A820E7B19F09C1E006B82BA /* NatGeo_DownloaderTests.m */; };
-		1AC0BEF819F0CBCD0067CEBB /* bs4 in Resources */ = {isa = PBXBuildFile; fileRef = 1AC0BEF719F0CBCD0067CEBB /* bs4 */; };
-		1AC0BEF919F0CBEB0067CEBB /* downloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 1AC0BEE419F0C3C10067CEBB /* downloader.py */; };
 		1AC0BEFA19F0DB7F0067CEBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A820E6E19F09C1E006B82BA /* MainMenu.xib */; };
+		3D0297521A07F568009FD02B /* downloader.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297511A07F568009FD02B /* downloader.py */; };
+		3D0297671A07F570009FD02B /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297541A07F570009FD02B /* __init__.py */; };
+		3D0297681A07F570009FD02B /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297561A07F570009FD02B /* __init__.py */; };
+		3D0297691A07F570009FD02B /* _html5lib.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297571A07F570009FD02B /* _html5lib.py */; };
+		3D02976A1A07F570009FD02B /* _htmlparser.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297581A07F570009FD02B /* _htmlparser.py */; };
+		3D02976B1A07F570009FD02B /* _lxml.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297591A07F570009FD02B /* _lxml.py */; };
+		3D02976C1A07F570009FD02B /* dammit.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D02975A1A07F570009FD02B /* dammit.py */; };
+		3D02976D1A07F570009FD02B /* diagnose.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D02975B1A07F570009FD02B /* diagnose.py */; };
+		3D02976E1A07F570009FD02B /* element.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D02975C1A07F570009FD02B /* element.py */; };
+		3D02976F1A07F570009FD02B /* testing.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D02975D1A07F570009FD02B /* testing.py */; };
+		3D0297701A07F570009FD02B /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D02975F1A07F570009FD02B /* __init__.py */; };
+		3D0297711A07F570009FD02B /* test_builder_registry.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297601A07F570009FD02B /* test_builder_registry.py */; };
+		3D0297721A07F570009FD02B /* test_docs.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297611A07F570009FD02B /* test_docs.py */; };
+		3D0297731A07F570009FD02B /* test_html5lib.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297621A07F570009FD02B /* test_html5lib.py */; };
+		3D0297741A07F570009FD02B /* test_htmlparser.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297631A07F570009FD02B /* test_htmlparser.py */; };
+		3D0297751A07F570009FD02B /* test_lxml.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297641A07F570009FD02B /* test_lxml.py */; };
+		3D0297761A07F570009FD02B /* test_soup.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297651A07F570009FD02B /* test_soup.py */; };
+		3D0297771A07F570009FD02B /* test_tree.py in Resources */ = {isa = PBXBuildFile; fileRef = 3D0297661A07F570009FD02B /* test_tree.py */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +53,24 @@
 		1A820E7519F09C1E006B82BA /* NatGeo DownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NatGeo DownloaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A820E7A19F09C1E006B82BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A820E7B19F09C1E006B82BA /* NatGeo_DownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NatGeo_DownloaderTests.m; sourceTree = "<group>"; };
-		1AC0BEE419F0C3C10067CEBB /* downloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = downloader.py; sourceTree = "<group>"; };
-		1AC0BEF719F0CBCD0067CEBB /* bs4 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bs4; path = "../OSX/NatGeo Downloader/bs4"; sourceTree = "<group>"; };
+		3D0297511A07F568009FD02B /* downloader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = downloader.py; sourceTree = SOURCE_ROOT; };
+		3D0297541A07F570009FD02B /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		3D0297561A07F570009FD02B /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		3D0297571A07F570009FD02B /* _html5lib.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _html5lib.py; sourceTree = "<group>"; };
+		3D0297581A07F570009FD02B /* _htmlparser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _htmlparser.py; sourceTree = "<group>"; };
+		3D0297591A07F570009FD02B /* _lxml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = _lxml.py; sourceTree = "<group>"; };
+		3D02975A1A07F570009FD02B /* dammit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dammit.py; sourceTree = "<group>"; };
+		3D02975B1A07F570009FD02B /* diagnose.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = diagnose.py; sourceTree = "<group>"; };
+		3D02975C1A07F570009FD02B /* element.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = element.py; sourceTree = "<group>"; };
+		3D02975D1A07F570009FD02B /* testing.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = testing.py; sourceTree = "<group>"; };
+		3D02975F1A07F570009FD02B /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		3D0297601A07F570009FD02B /* test_builder_registry.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_builder_registry.py; sourceTree = "<group>"; };
+		3D0297611A07F570009FD02B /* test_docs.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_docs.py; sourceTree = "<group>"; };
+		3D0297621A07F570009FD02B /* test_html5lib.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_html5lib.py; sourceTree = "<group>"; };
+		3D0297631A07F570009FD02B /* test_htmlparser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_htmlparser.py; sourceTree = "<group>"; };
+		3D0297641A07F570009FD02B /* test_lxml.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_lxml.py; sourceTree = "<group>"; };
+		3D0297651A07F570009FD02B /* test_soup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_soup.py; sourceTree = "<group>"; };
+		3D0297661A07F570009FD02B /* test_tree.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test_tree.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +151,51 @@
 		1AC0BECF19F0C3C10067CEBB /* vendor */ = {
 			isa = PBXGroup;
 			children = (
-				1AC0BEF719F0CBCD0067CEBB /* bs4 */,
-				1AC0BEE419F0C3C10067CEBB /* downloader.py */,
+				3D0297531A07F570009FD02B /* bs4 */,
+				3D0297511A07F568009FD02B /* downloader.py */,
 			);
 			name = vendor;
 			path = ../../vendor;
+			sourceTree = "<group>";
+		};
+		3D0297531A07F570009FD02B /* bs4 */ = {
+			isa = PBXGroup;
+			children = (
+				3D0297541A07F570009FD02B /* __init__.py */,
+				3D0297551A07F570009FD02B /* builder */,
+				3D02975A1A07F570009FD02B /* dammit.py */,
+				3D02975B1A07F570009FD02B /* diagnose.py */,
+				3D02975C1A07F570009FD02B /* element.py */,
+				3D02975D1A07F570009FD02B /* testing.py */,
+				3D02975E1A07F570009FD02B /* tests */,
+			);
+			path = bs4;
+			sourceTree = SOURCE_ROOT;
+		};
+		3D0297551A07F570009FD02B /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				3D0297561A07F570009FD02B /* __init__.py */,
+				3D0297571A07F570009FD02B /* _html5lib.py */,
+				3D0297581A07F570009FD02B /* _htmlparser.py */,
+				3D0297591A07F570009FD02B /* _lxml.py */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		3D02975E1A07F570009FD02B /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D02975F1A07F570009FD02B /* __init__.py */,
+				3D0297601A07F570009FD02B /* test_builder_registry.py */,
+				3D0297611A07F570009FD02B /* test_docs.py */,
+				3D0297621A07F570009FD02B /* test_html5lib.py */,
+				3D0297631A07F570009FD02B /* test_htmlparser.py */,
+				3D0297641A07F570009FD02B /* test_lxml.py */,
+				3D0297651A07F570009FD02B /* test_soup.py */,
+				3D0297661A07F570009FD02B /* test_tree.py */,
+			);
+			path = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +284,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC0BEFA19F0DB7F0067CEBB /* MainMenu.xib in Resources */,
-				1AC0BEF919F0CBEB0067CEBB /* downloader.py in Resources */,
-				1AC0BEF819F0CBCD0067CEBB /* bs4 in Resources */,
+				3D0297701A07F570009FD02B /* __init__.py in Resources */,
+				3D0297721A07F570009FD02B /* test_docs.py in Resources */,
 				1A820E6D19F09C1E006B82BA /* Images.xcassets in Resources */,
+				3D0297671A07F570009FD02B /* __init__.py in Resources */,
+				3D02976B1A07F570009FD02B /* _lxml.py in Resources */,
+				3D02976A1A07F570009FD02B /* _htmlparser.py in Resources */,
+				3D0297751A07F570009FD02B /* test_lxml.py in Resources */,
+				3D0297761A07F570009FD02B /* test_soup.py in Resources */,
+				3D0297731A07F570009FD02B /* test_html5lib.py in Resources */,
+				3D0297741A07F570009FD02B /* test_htmlparser.py in Resources */,
+				3D0297681A07F570009FD02B /* __init__.py in Resources */,
+				3D02976D1A07F570009FD02B /* diagnose.py in Resources */,
+				3D0297521A07F568009FD02B /* downloader.py in Resources */,
+				3D0297711A07F570009FD02B /* test_builder_registry.py in Resources */,
+				3D02976C1A07F570009FD02B /* dammit.py in Resources */,
+				3D0297691A07F570009FD02B /* _html5lib.py in Resources */,
+				3D02976E1A07F570009FD02B /* element.py in Resources */,
+				3D0297771A07F570009FD02B /* test_tree.py in Resources */,
+				3D02976F1A07F570009FD02B /* testing.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
